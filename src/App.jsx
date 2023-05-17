@@ -14,7 +14,7 @@ const App = () => {
         <div className="py-3 px-10">
           <input
             type="text"
-            placeholder="Search Movie..."
+            placeholder="Search Serie..."
             className="input w-full "
             onChange={(e) => setSearch(e.target.value)}
           />

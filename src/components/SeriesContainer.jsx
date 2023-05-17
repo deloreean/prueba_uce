@@ -25,14 +25,14 @@ const SeriesContainer = ({ search }) => {
   return (
     <>
       <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5">
-        {data.tv_shows.map((movie) => (
+        {data.tv_shows.map((serie) => (
           <SerieCard
-            id={movie.id}
-            name={movie.name}
-            startDate={movie.start_date}
-            image={movie.image_thumbnail_path}
-            serieStatus={movie.status}
-            key={movie.id}
+            id={serie.id}
+            name={serie.name}
+            startDate={serie.start_date}
+            image={serie.image_thumbnail_path}
+            serieStatus={serie.status}
+            key={serie.id}
           />
         ))}
       </div>

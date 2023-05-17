@@ -10,7 +10,7 @@ const Card = ({ id, name, image, startDate, serieStatus }) => {
   return (
     <div className="card card-side bg-base-100 shadow-xl">
       <figure>
-        <img src={image} className="w-full h-full"  alt="Movie" />
+        <img src={image} className="w-full h-full"  alt="Serie Image" />
       </figure>
       <span className={`absolute left-0 top-0 rounded-tl-xl rounded-br-xl text-xs font-medium ${badgeColorStatus[serieStatus.toLowerCase()] ?? badgeColorStatus['default']} text-white py-1 px-2 dark:bg-gray-900`}>
           {serieStatus}
